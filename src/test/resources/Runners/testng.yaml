@@ -1,0 +1,15 @@
+name: Live Project 1
+configFailurePolicy: skip
+listeners:
+  - org.uncommons.reportng.HTMLReporter
+  - org.uncommons.reportng.JUnitXMLReporter
+  - com.framework.listeners.CustomListeners
+tests:
+  - name: Test
+    classes:
+      - com.framework.baseClass.LoginTest
+
+  - name: AddCustomer
+    classes:
+      - com.framework.testcases.AddCustomerTest
+
